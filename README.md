@@ -88,7 +88,7 @@ Todos os componentes são:
 
 ### Pré-requisitos
 - Node.js 18+ 
-- pnpm (recomendado) ou npm
+- npm (recomendado) ou npm
 
 ### Instalação
 
@@ -98,31 +98,44 @@ git clone <repository-url>
 cd user-registration-app
 
 # Instalar dependências
-pnpm install
+npm install
 ```
 
 ### Desenvolvimento
 
 ```bash
 # Executar em modo desenvolvimento
-pnpm dev
+npm dev
 
 # Executar testes
-pnpm test
+npm test
 
 # Executar testes em modo watch
-pnpm test:watch
+npm test:watch
 
 # Executar Storybook
-pnpm storybook
+npm storybook
 
 # Build para produção
-pnpm build
+npm build
 
 # Preview do build
-pnpm preview
+npm preview
 ```
+### Produção
+```bash
+# Limpar a pasta dist
+rm -rf dist
 
+# Criar o build do projeto
+npm run build
+
+# Instalar serve para rodar o projeto
+npm install -g serve
+
+# Rodar o projeto
+serve -s dist
+```
 ## 🧪 Testes
 
 O projeto inclui testes abrangentes para:
@@ -137,13 +150,11 @@ O projeto inclui testes abrangentes para:
 
 ```bash
 # Executar todos os testes
-pnpm test
+npm test
 
 # Executar testes com coverage
-pnpm test:coverage
+npm test:coverage
 
-# Executar testes do Storybook
-pnpm test-storybook
 ```
 
 ## 📚 Documentação
@@ -152,7 +163,7 @@ pnpm test-storybook
 A documentação completa dos componentes está disponível no Storybook:
 
 ```bash
-pnpm storybook
+npm storybook
 ```
 
 Acesse: http://localhost:6006
@@ -201,16 +212,16 @@ VITE_VIACEP_API_URL=https://viacep.com.br/ws
 
 ### Scripts Disponíveis
 
-- `pnpm dev` - Inicia o servidor de desenvolvimento
-- `pnpm build` - Gera build de produção
-- `pnpm preview` - Preview do build de produção
-- `pnpm test` - Executa testes
-- `pnpm test:watch` - Executa testes em modo watch
-- `pnpm test:coverage` - Executa testes com coverage
-- `pnpm storybook` - Inicia o Storybook
-- `pnpm build-storybook` - Gera build do Storybook
-- `pnpm lint` - Executa linting
-- `pnpm type-check` - Verifica tipos TypeScript
+- `npm dev` - Inicia o servidor de desenvolvimento
+- `npm build` - Gera build de produção
+- `npm preview` - Preview do build de produção
+- `npm test` - Executa testes
+- `npm test:watch` - Executa testes em modo watch
+- `npm test:coverage` - Executa testes com coverage
+- `npm storybook` - Inicia o Storybook
+- `npm build-storybook` - Gera build do Storybook
+- `npm lint` - Executa linting
+- `npm type-check` - Verifica tipos TypeScript
 
 ## 🎯 Funcionalidades Implementadas
 
