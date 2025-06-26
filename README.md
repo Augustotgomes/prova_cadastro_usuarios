@@ -105,7 +105,9 @@ npm install
 
 ```bash
 #OBSERVAÇÃO
-ao executar em Desenvolvimento os dados dos usuários são duplicados por conta do Strict Mode do React, se desejar comente o <StrictMode> no arquivo main.tsx
+#Ao executar em Desenvolvimento os dados dos usuários são duplicados por conta do Strict Mode do React, se desejar comente o <StrictMode> no arquivo main.tsx
+
+
 # Executar em modo desenvolvimento
 npm dev
 
